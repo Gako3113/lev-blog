@@ -22,9 +22,11 @@
                 <p>{{ $post->body }}</p>
             </div>
         </div>
+        <a href="">{{ $post->category->name }}</a>
         <div class="footer">
             <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
             <a href="/posts">戻る</a>
         </div>
+        <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
     </body>
 </html>

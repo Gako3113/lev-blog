@@ -33,5 +33,6 @@
         <div class="paginate">
             {{ $posts->links() }}
         </div>
+        <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
     </body>
 </html>
